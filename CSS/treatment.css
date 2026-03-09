@@ -1,0 +1,251 @@
+/* ===== From here this is Treatment page CSS ===== */
+
+
+.treat-video {
+    position: relative;
+    height: 720px;
+    overflow: hidden;
+}
+
+.treat-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.treat-video::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+    width: 90%;
+}
+
+.video-text h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.video-text p {
+    font-size: 18px;
+    opacity: 0.95;
+    color: #afafaf;
+}
+
+/* ===== TREATMENTS SECTION ===== */
+
+.treatments-area {
+    padding: 80px 8%;
+}
+
+.treatments-content {
+    display: flex;
+    gap: 50px;
+}
+
+.treatments-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 80px auto 50px auto;
+}
+
+.treatments-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e2a38;
+    margin-bottom: 15px;
+}
+
+.treatments-header p {
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.filter-side {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-side select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.treat-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.treat-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.treat-card:hover {
+    transform: translateY(-8px);
+}
+
+.treat-img {
+    position: relative;
+}
+
+.treat-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.country-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #1f5f6b;
+    color: white;
+    padding: 5px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.treat-info {
+    padding: 20px;
+}
+
+.rating {
+    margin: 8px 0;
+}
+
+.stars {
+    color: #f4b400;
+}
+
+.rate-score {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.hospital {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.view-btn {
+    background: #1f5f6b;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.view-btn:hover {
+    background: #00b4d8;
+}
+@media (max-width:1024px){
+
+.treat-video{
+height:520px;
+}
+
+.video-text h2{
+font-size:42px;
+}
+
+.video-text p{
+font-size:16px;
+}
+
+.treatments-content{
+flex-direction:column;
+}
+
+.filter-side{
+width:100%;
+flex-direction:row;
+gap:20px;
+}
+
+.filter-side select{
+flex:1;
+}
+
+}
+
+
+@media (max-width:768px){
+
+.treat-video{
+height:420px;
+}
+
+.video-text h2{
+font-size:32px;
+}
+
+.video-text p{
+font-size:15px;
+}
+
+.treatments-area{
+padding:60px 6%;
+}
+
+.treatments-header h2{
+font-size:28px;
+}
+
+.treat-grid{
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+}
+
+@media (max-width:480px){
+
+.treat-video{
+height:350px;
+}
+
+.video-text h2{
+font-size:24px;
+}
+
+.video-text p{
+font-size:14px;
+}
+
+.treat-grid{
+grid-template-columns:1fr;
+}
+
+.filter-side{
+flex-direction:column;
+}
+
+}

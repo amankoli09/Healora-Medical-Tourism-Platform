@@ -1,0 +1,338 @@
+.compare-hero {
+    height: 89vh;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/comparelandingpage.png");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.compare-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.compare-hero-content {
+    max-width: 750px;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.compare-hero h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.compare-hero p {
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+@media(max-width:768px) {
+
+    .compare-hero {
+        height: 55vh;
+    }
+
+    .compare-hero h1 {
+        font-size: 32px;
+    }
+
+    .compare-hero p {
+        font-size: 14px;
+    }
+
+}
+
+/* This is the compare section */
+
+.compare-section {
+    padding: 80px 8%;
+    background: #f4f9fc;
+}
+
+.compare-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.compare-content h2 {
+    font-size: 34px;
+    color: #1f5f6b;
+    margin-bottom: 10px;
+}
+
+.compare-sub {
+    color: #6b7a90;
+    margin-bottom: 40px;
+}
+
+.compare-table {
+    overflow-x: auto;
+}
+
+.compare-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.compare-table th {
+    background: #1f5f6b;
+    color: white;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.compare-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.compare-table tr:hover {
+    background: #f2f8fb;
+}
+
+.compare-table td:first-child,
+.compare-table th:first-child {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.stars td {
+    color: #f4b400;
+}
+
+.compare-filter {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-box label {
+    font-size: 14px;
+    color: #1f5f6b;
+    font-weight: 500;
+}
+
+.filter-box select {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    min-width: 220px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-box select:hover {
+    border-color: #1f5f6b;
+}
+
+.filter-box select:focus {
+    outline: none;
+    border-color: #00B4D8;
+}
+
+/* This section is for the compare section */
+.compare-tool h2 {
+    font-size: 34px;
+    color: #1f5f6b;
+    margin-bottom: 10px;
+}
+
+.compare-tool {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.compare-table {
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+    padding: 14px 28px;
+    text-align: center;
+}
+
+.compare-table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.compare-table tr:hover {
+    background: #dee2e4;
+}
+
+.compare-table th {
+    background: #2b6a73;
+    color: white;
+    font-weight: 600;
+}
+
+.compare-filters {
+    gap: 20px;
+    display: flex;
+    margin: 40px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.compare-filters select {
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    height: auto;
+    width: 200px;
+}
+
+.compare-filters button {
+    padding: 12px 25px;
+    background: #2b6a73;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.compare-filters button:hover {
+    background: #1f5259;
+}
+
+#resultBox {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    animation: fadeIn 0.4s ease;
+}
+
+#resultBox h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #1f5f6b;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* This is the responsivness for the big screen*/
+@media (max-width:1024px) {
+
+    .compare-hero h1 {
+        font-size: 38px;
+    }
+
+    .compare-content h2 {
+        font-size: 28px;
+    }
+
+    .compare-table th,
+    .compare-table td {
+        padding: 12px 16px;
+    }
+
+    .compare-filters select {
+        width: 180px;
+    }
+
+}
+
+/* This is the responsivnes for the mobile */
+@media (max-width:768px) {
+
+    .compare-section {
+        padding: 60px 5%;
+    }
+
+    .compare-tool {
+        padding: 40px 5%;
+    }
+
+    .compare-content h2 {
+        font-size: 24px;
+    }
+
+    .compare-sub {
+        font-size: 14px;
+    }
+
+    .compare-filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .compare-filters select {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .compare-filters button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .compare-table table {
+        font-size: 14px;
+    }
+
+}
+
+/* Small mobile*/
+@media (max-width:480px) {
+
+    .compare-hero {
+        height: 50vh;
+    }
+
+    .compare-hero h1 {
+        font-size: 26px;
+    }
+
+    .compare-hero p {
+        font-size: 13px;
+    }
+
+    .compare-content h2 {
+        font-size: 20px;
+    }
+
+    .compare-table th,
+    .compare-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+}
