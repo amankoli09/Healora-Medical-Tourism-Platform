@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healora | Global Medical Tourism</title>
+
+    <!-- This Is Imporet Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+
+
+            <div class="nav-left">
+                <img src="images/logo.png" alt="Healora Logo" class="logo">
+            </div>
+
+            <div class="nav-pill">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="contact.html" class="getbut">Get Consultation</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="healora-connect">
+
+    <div class="connect-layout">
+
+        <div class="connect-visual">
+            <img src="images/landing.png" alt="Consultation">
+        </div>
+
+        <div class="connect-panel">
+
+            <h1>Request Consultation</h1>
+
+            <form id="consultForm" class="connect-grid">
+
+                <div class="connect-fields">
+
+                    <div class="field-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="country">Preferred Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option>India</option>
+                            <option>Turkey</option>
+                            <option>Thailand</option>
+                            <option>Germany</option>
+                        </select>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Treatment Type</label>
+                        <div class="radio-row">
+                            <label><input type="radio" name="treatment" value="surgery" required> Surgery</label>
+                            <label><input type="radio" name="treatment" value="cosmetic"> Cosmetic</label>
+                            <label><input type="radio" name="treatment" value="dental"> Dental</label>
+                            <label><input type="radio" name="treatment" value="other"> Other</label>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="3" required></textarea>
+                    </div>
+
+                    <button type="submit" class="request-button">
+                        Request Appointment
+                    </button>
+                    <p id="formMessage" class="form-message"></p>
+
+                </div>
+
+                <div class="connect-info">
+                    <h3>Contact</h3>
+                    <p>support@healora.com</p>
+
+                    <h3>Based In</h3>
+                    <p>Pune, Maharashtra</p>
+
+                    <div class="socials">
+                        <a href="#"><img src="images/Facebook.png"></a>
+                        <a href="#"><img src="images/insta.png"></a>
+                        <a href="#"><img src="images/Twit.png"></a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/footer.png" alt="footer logo">
+                <p>Healora is your trusted partner in global medical tourism, connecting you with top healthcare
+                    providers worldwide for exceptional care and unforgettable experiences.</p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="treatments.html">Treatments</a>
+                <a href="compare.html">Compare</a>
+                <a href="doctors.html">Doctors</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Connect</h2>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+                <a href="">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Healora. All rights reserved.</p>
+            <a href="#">Back to Top</a>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

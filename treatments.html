@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healora | Global Medical Tourism</title>
+
+    <!-- This Is Imporet Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/treatment.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+
+
+            <div class="nav-left">
+                <img src="images/logo.png" alt="Healora Logo" class="logo">
+            </div>
+
+            <div class="nav-pill">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="contact.html" class="getbut">Get Consultation</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="treat-video">
+        <video autoplay muted loop>
+            <source src="images/healora.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-text">
+            <h2>Advanced Medical Care Worldwide</h2>
+            <p>Explore trusted treatments across top global hospitals.</p>
+        </div>
+    </section>
+
+    <section class="treatments-area">
+
+        <div class="treatments-header">
+            <h2>Find the Right Treatment for You</h2>
+            <p>
+                Compare transparent pricing, recovery timelines, and hospital ratings
+                across internationally accredited medical destinations.
+            </p>
+        </div>
+
+        <div class="treatments-content">
+
+            <div class="filter-side">
+                <h3>Filter Treatments</h3>
+
+                <label>Country</label>
+                <select id="countryFilter">
+                    <option value="All">All Countries</option>
+                    <option value="India">India</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Germany">Germany</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="UAE">UAE</option>
+                </select>
+
+                <label>Specialty</label>
+                <select id="specialtyFilter">
+                    <option value="All">All Specialties</option>
+                    <option value="Hair">Hair</option>
+                    <option value="Ayurveda">Ayurveda</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Dental">Dental</option>
+                    <option value="Transplant">Transplant</option>
+                    <option value="Cosmetic">Cosmetic</option>
+                    <option value="Orthopedic">Orthopedic</option>
+                    <option value="Oncology">Oncology</option>
+                </select>
+            </div>
+
+            <div class="treat-grid">
+                <div class="treat-card" data-country="India" data-specialty="Hair">
+                    <div class="treat-img">
+                        <img src="images/Hairtransplant.jpg">
+                        <span class="country-badge">India</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Hair Transplant</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.8</span>
+                        </div>
+
+                        <p class="hospital">Apollo Hospital, Delhi</p>
+                        <p class="price">Starting from <strong>₹85,000</strong></p>
+                        <p class="recovery">Recovery: 7 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="India" data-specialty="Ayurveda">
+                    <div class="treat-img">
+                        <img src="images/Ayervedic.png">
+                        <span class="country-badge">India</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Ayurvedic Therapy</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.9</span>
+                        </div>
+
+                        <p class="hospital">Kairali Ayurveda, Kerala</p>
+                        <p class="price">Starting from <strong>₹25,000</strong></p>
+                        <p class="recovery">Recovery: 5 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="India" data-specialty="Transplant">
+                    <div class="treat-img">
+                        <img src="images/livertrans.webp">
+                        <span class="country-badge">India</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>Liver Transplant</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.9</span>
+                        </div>
+                        <p class="hospital">Medanta Hospital, Gurgaon</p>
+                        <p class="price">Starting from <strong>₹18,00,000</strong></p>
+                        <p class="recovery">Recovery: 30 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="India" data-specialty="Cardiology">
+                    <div class="treat-img">
+                        <img src="images/caradic bypas.jpeg">
+                        <span class="country-badge">India</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Cardiac Bypass Surgery</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rate-score">4.6</span>
+                        </div>
+
+                        <p class="hospital">Fortis Hospital, Mumbai</p>
+                        <p class="price">Starting from <strong>₹2,40,000</strong></p>
+                        <p class="recovery">Recovery: 14 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Turkey" data-specialty="Dental">
+                    <div class="treat-img">
+                        <img src="images/Dentalimplant.jpg">
+                        <span class="country-badge">Turkey</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Dental Implants</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.9</span>
+                        </div>
+
+                        <p class="hospital">Smile Clinic, Istanbul</p>
+                        <p class="price">Starting from <strong>$2,500</strong></p>
+                        <p class="recovery">Recovery: 5 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Turkey" data-specialty="Cosmetic">
+                    <div class="treat-img">
+                        <img src="images/Rhinoplasty.png">
+                        <span class="country-badge">Turkey</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Rhinoplasty</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.8</span>
+                        </div>
+
+                        <p class="hospital">Acibadem Hospital</p>
+                        <p class="price">Starting from <strong>$3,000</strong></p>
+                        <p class="recovery">Recovery: 10 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+
+                <div class="treat-card" data-country="Thailand" data-specialty="Transplant">
+                    <div class="treat-img">
+                        <img src="images/ivf.jpg">
+                        <span class="country-badge">Thailand</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>IVF Treatment</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">5.0</span>
+                        </div>
+
+                        <p class="hospital">Bumrungrad Hospital</p>
+                        <p class="price">Starting from <strong>$4,200</strong></p>
+                        <p class="recovery">Recovery: 8 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Thailand" data-specialty="Orthopedic">
+                    <div class="treat-img">
+                        <img src="images/spine.jpg">
+                        <span class="country-badge">Thailand</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>Spine Surgery</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rate-score">4.7</span>
+                        </div>
+                        <p class="hospital">Bangkok Hospital</p>
+                        <p class="price">Starting from <strong>$6,500</strong></p>
+                        <p class="recovery">Recovery: 20 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="UAE" data-specialty="Transplant">
+                    <div class="treat-img">
+                        <img src="images/roboticpros.jpg">
+                        <span class="country-badge">UAE</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>Robotic Prostate Surgery</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rate-score">4.8</span>
+                        </div>
+                        <p class="hospital">Mediclinic City Hospital, Dubai</p>
+                        <p class="price">Starting from <strong>$14,000</strong></p>
+                        <p class="recovery">Recovery: 15 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Germany" data-specialty="Orthopedic">
+                    <div class="treat-img">
+                        <img src="images/Knee Replacement.jpeg">
+                        <span class="country-badge">Germany</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Knee Replacement</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rate-score">4.7</span>
+                        </div>
+
+                        <p class="hospital">Charité Hospital, Berlin</p>
+                        <p class="price">Starting from <strong>€9,000</strong></p>
+                        <p class="recovery">Recovery: 21 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Singapore" data-specialty="Cardiology">
+                    <div class="treat-img">
+                        <img src="images/HeartValve.jpeg">
+                        <span class="country-badge">Singapore</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>Heart Valve Replacement</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">5.0</span>
+                        </div>
+                        <p class="hospital">Mount Elizabeth Hospital</p>
+                        <p class="price">Starting from <strong>$18,000</strong></p>
+                        <p class="recovery">Recovery: 18 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="South Korea" data-specialty="Cosmetic">
+                    <div class="treat-img">
+                        <img src="images/Cosmetic Surgery.jpg">
+                        <span class="country-badge">South Korea</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Cosmetic Surgery</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.9</span>
+                        </div>
+
+                        <p class="hospital">ID Hospital, Seoul</p>
+                        <p class="price">Starting from <strong>$5,500</strong></p>
+                        <p class="recovery">Recovery: 12 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Turkey" data-specialty="Transplant">
+                    <div class="treat-img">
+                        <img src="images/BariatricSurgery.jpg">
+                        <span class="country-badge">Turkey</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>Bariatric Surgery</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.9</span>
+                        </div>
+                        <p class="hospital">Medical Park, Istanbul</p>
+                        <p class="price">Starting from <strong>$4,000</strong></p>
+                        <p class="recovery">Recovery: 10 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="UAE" data-specialty="Oncology">
+                    <div class="treat-img">
+                        <img src="images/cancer.jpg">
+                        <span class="country-badge">UAE</span>
+                    </div>
+
+                    <div class="treat-info">
+                        <h3>Cancer Treatment</h3>
+
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rate-score">4.6</span>
+                        </div>
+
+                        <p class="hospital">Cleveland Clinic, Dubai</p>
+                        <p class="price">Starting from <strong>$12,000</strong></p>
+                        <p class="recovery">Recovery: 30 Days</p>
+
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="treat-card" data-country="India" data-specialty="Transplant">
+                    <div class="treat-img">
+                        <img src="images/kidney.webp">
+                        <span class="country-badge">India</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>Kidney Transplant</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rate-score">4.7</span>
+                        </div>
+                        <p class="hospital">Apollo Hospitals, Chennai</p>
+                        <p class="price">Starting from <strong>₹6,50,000</strong></p>
+                        <p class="recovery">Recovery: 21 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Turkey" data-specialty="Cosmetic">
+                    <div class="treat-img">
+                        <img src="images/LASIK Eye Surgery.jpg">
+                        <span class="country-badge">Turkey</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>LASIK Eye Surgery</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.8</span>
+                        </div>
+                        <p class="hospital">Dunya Eye Hospital, Istanbul</p>
+                        <p class="price">Starting from <strong>$1,200</strong></p>
+                        <p class="recovery">Recovery: 3 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="treat-card" data-country="Germany" data-specialty="Oncology">
+                    <div class="treat-img">
+                        <img src="images/brain.webp">
+                        <span class="country-badge">Germany</span>
+                    </div>
+                    <div class="treat-info">
+                        <h3>Brain Tumor Surgery</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rate-score">4.9</span>
+                        </div>
+                        <p class="hospital">Heidelberg University Hospital</p>
+                        <p class="price">Starting from <strong>€15,000</strong></p>
+                        <p class="recovery">Recovery: 25 Days</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/footer.png" alt="footer logo">
+                <p>Healora is your trusted partner in global medical tourism, connecting you with top healthcare
+                    providers worldwide for exceptional care and unforgettable experiences.</p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="treatments.html">Treatments</a>
+                <a href="compare.html">Compare</a>
+                <a href="doctors.html">Doctors</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Connect</h2>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+                <a href="">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Healora. All rights reserved.</p>
+            <a href="#">Back to Top</a>
+        </div>
+    </footer>
+    <script src="js/treatment.js"></script>
+</body>
+
+</html>

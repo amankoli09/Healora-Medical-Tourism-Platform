@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healora | Global Medical Tourism</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/compare.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+
+            <div class="nav-left">
+                <img src="images/logo.png" alt="Healora Logo" class="logo">
+            </div>
+
+            <div class="nav-pill">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="contact.html" class="getbut">Get Consultation</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="compare-hero">
+        <div class="compare-hero-content">
+
+            <h1>Compare Medical Treatments Worldwide</h1>
+
+            <p>
+                Explore treatment costs, recovery time, and hospital ratings across
+                top medical tourism destinations. Healora helps you make the right
+                healthcare decision with transparent comparisons.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="compare-section">
+        <div class="compare-content">
+
+            <h2>Treatment Cost Comparison</h2>
+
+            <p class="compare-sub">
+                Compare treatment prices across top medical tourism destinations.
+            </p>
+            <div class="compare-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Treatment</th>
+                            <th>India</th>
+                            <th>Turkey</th>
+                            <th>Thailand</th>
+                            <th>Germany</th>
+                            <th>Singapore</th>
+                            <th>UAE</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Heart Bypass Surgery</td>
+                            <td>$6000</td>
+                            <td>$9000</td>
+                            <td>$8500</td>
+                            <td>$20000</td>
+                            <td>$18000</td>
+                            <td>$16000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Knee Replacement</td>
+                            <td>$4500</td>
+                            <td>$6500</td>
+                            <td>$7000</td>
+                            <td>$15000</td>
+                            <td>$14000</td>
+                            <td>$12000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dental Implants</td>
+                            <td>$900</td>
+                            <td>$1200</td>
+                            <td>$1100</td>
+                            <td>$3000</td>
+                            <td>$2800</td>
+                            <td>$2500</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hair Transplant</td>
+                            <td>$1500</td>
+                            <td>$2200</td>
+                            <td>$2500</td>
+                            <td>$5000</td>
+                            <td>$4800</td>
+                            <td>$4200</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hip Replacement</td>
+                            <td>$5200</td>
+                            <td>$7000</td>
+                            <td>$7500</td>
+                            <td>$16000</td>
+                            <td>$15000</td>
+                            <td>$13000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Spine Surgery</td>
+                            <td>$4800</td>
+                            <td>$6900</td>
+                            <td>$7200</td>
+                            <td>$14000</td>
+                            <td>$13500</td>
+                            <td>$12000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Liver Transplant</td>
+                            <td>$32000</td>
+                            <td>$42000</td>
+                            <td>$40000</td>
+                            <td>$85000</td>
+                            <td>$80000</td>
+                            <td>$70000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Kidney Transplant</td>
+                            <td>$15000</td>
+                            <td>$21000</td>
+                            <td>$20000</td>
+                            <td>$45000</td>
+                            <td>$42000</td>
+                            <td>$38000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cosmetic Surgery</td>
+                            <td>$3000</td>
+                            <td>$4200</td>
+                            <td>$4000</td>
+                            <td>$9000</td>
+                            <td>$8500</td>
+                            <td>$7800</td>
+                        </tr>
+
+                        <tr>
+                            <td>Eye LASIK Surgery</td>
+                            <td>$1200</td>
+                            <td>$1600</td>
+                            <td>$1500</td>
+                            <td>$4000</td>
+                            <td>$3800</td>
+                            <td>$3500</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="compare-tool">
+
+        <h2>Compare Treatments in Detail</h2>
+
+        <div class="compare-filters">
+
+            <select id="treatment" onchange="compareTreatment()">
+
+                <option>Heart Bypass Surgery</option>
+                <option>Knee Replacement</option>
+                <option>Dental Implants</option>
+                <option>Hair Transplant</option>
+                <option>Hip Replacement</option>
+                <option>Spine Surgery</option>
+                <option>Liver Transplant</option>
+                <option>Kidney Transplant</option>
+                <option>Cosmetic Surgery</option>
+                <option>Eye LASIK Surgery</option>
+            </select>
+            
+            <select id="country1">
+                <option>India</option>
+                <option>Turkey</option>
+                <option>Thailand</option>
+                <option>Germany</option>
+                <option>Singapore</option>
+                <option>UAE</option>
+            </select>
+
+            <select id="country2">
+                <option>Germany</option>
+                <option>India</option>
+                <option>Turkey</option>
+                <option>Thailand</option>
+                <option>Singapore</option>
+                <option>UAE</option>
+            </select>
+
+            <button onclick="compareTreatment()">Compare</button>
+
+            <div id="resultBox"></div>
+
+        </div>
+
+        <div id="resultBox"></div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <img src="images/footer.png" alt="footer logo">
+                <p>
+                    Healora is your trusted partner in global medical tourism, connecting you with top healthcare
+                    providers worldwide for exceptional care and unforgettable experiences.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="treatments.html">Treatments</a>
+                <a href="compare.html">Compare</a>
+                <a href="doctors.html">Doctors</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Connect</h2>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Healora. All rights reserved.</p>
+            <a href="#">Back to Top</a>
+        </div>
+
+    </footer>
+
+    <script src="js/compare.js"></script>
+
+</body>
+
+</html>
