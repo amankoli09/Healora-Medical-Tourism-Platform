@@ -27,6 +27,6 @@ document.getElementById('consultForm').addEventListener("submit", function(e){
     formMessage.textContent = "Your consultation request has been submitted successfully!";
     formMessage.style.color = "green";
 
-    formMessage.getElementById('consultForm').reset();
+    document.getElementById('consultForm').reset();
 
 });
